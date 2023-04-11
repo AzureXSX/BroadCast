@@ -1,0 +1,31 @@
+﻿<Window x:Class="Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Server"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="180" Width="820"
+        Loaded="Window_Loaded">
+    <Canvas>
+        <TextBox Width="630"
+                 Height="50"
+                 x:Name="TXT"
+                 FontSize="30" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="82" VerticalAlignment="Top"/>
+        <Button Content="Send Broadcast"
+                Width="133"
+                Height="50" Canvas.Left="657" Canvas.Top="82" HorizontalAlignment="Center" VerticalAlignment="Top"
+                GotMouseCapture="Button_GotMouseCapture">
+
+        </Button>
+        <RadioButton x:Name="Sport"
+                  Content="Sport" Canvas.Left="10" Canvas.Top="52" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <RadioButton x:Name="Food"
+                  Content="Food" Canvas.Left="110" Canvas.Top="52" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <RadioButton x:Name="Furniture"
+                  Content="Furniture" Canvas.Left="210" Canvas.Top="52" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Select Topic" FontSize="20" Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top"></Label>
+    </Canvas>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="BroadCast.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BroadCast"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Canvas>
+        <TextBox x:Name="TXT"
+                 TextWrapping="Wrap"
+                 Height="360"
+                 Width="700"
+                 Margin="50,40"
+                 IsReadOnly="True">
+            
+        </TextBox>
+
+        <CheckBox x:Name="Sport"
+                  Content="Sport"
+                  Margin="50,20"></CheckBox>
+        
+        <CheckBox x:Name="Food"
+                  Content="Food"
+                  Margin="150,20"></CheckBox>
+
+        <CheckBox x:Name="Furniture"
+                  Content="Furniture"
+                  Margin="250,20"></CheckBox>
+    </Canvas>
+</Window>
